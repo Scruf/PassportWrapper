@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "scraper.js",
+  "sourceRoot": "",
+  "sources": [
+    "scraper.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "passport-wrapper",
+  "version": "0.0.0",
+  "description": "free netfilx app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "bson": "^0.4.20",
+    "core-util-is": "^1.0.2",
+    "es6-promise": "^2.1.1",
+    "express": "^4.13.4",
+    "inherits": "^2.0.1",
+    "isarray": "^0.0.1",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.0.52",
+    "mongodb-core": "^1.2.28",
+    "mongoose": "^4.3.3",
+    "moviedb": "^0.2.2",
+    "readable-stream": "^1.0.31",
+    "string_decoder": "^0.10.31"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scruf/PassportWarapper.git"
+  },
+  "author": "Egor Kozitski Bernie Cecchini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scruf/PassportWarapper/issues"
+  },
+  "homepage": "https://github.com/Scruf/PassportWarapper#readme"
+}
