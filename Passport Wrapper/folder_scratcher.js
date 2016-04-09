@@ -53,36 +53,39 @@ fs.readdir("E:/Downloads",function(err,data){
         data.filter(function (d){
             for (var i=0;i<extensions.length;i++){
                 if(d.split(".")[1]===extensions[i]) {
-                    console.log(get_size(get_path(base_dir,d)));
+                    //console.log(get_size(get_path(base_dir,d)));
                     Movie.set_drive_name("Egor");
                     Movie.set_movie_size(get_size(get_path(base_dir,d)));
                     Movie.set_movie_title(d);
                     Movie.set_movie_path(get_path(base_dir,d));
-                    movie_arr.push(Movie);
-                    //movie_list.push(d);
+                    //movie_arr.push(Movie);
+                    //console.log(Movie.print_property());
                 }
             }
         });
         data.filter(function(d){
             if(d.split(".").length===1){
-                directory = base_dir+d;
-               fs.readdir(directory,function(err,data){
-                   if(err)
-                    throw err;
-                   else{
-                      for(var i=0;i<data.length;i++){
-                          for(var j=0;j<extensions.length;j++){
-                              if(data[i].split(".")[1]===extensions[i]) {
-                                  movie_list.push(data[i]);
-                              }
-                          }
-                      }
+                fs.readdir(get_path(base_dir,d),function(err,data){
+                   if(err) throw err;
+                    else{
+
+                       data.filter(function(movie){
+                           for(var e in extensions)
+                                if(movie.split(".")[1]==extensions[e]){
+                                    Movie.set_drive_name("Egor");
+                                    Movie.set_movie_size(get_size(get_path(base_dir,d)+"/"+movie));
+                                    Movie.set_movie_title(movie);
+                                    Movie.set_movie_path(get_path(base_dir,d)+"/"+movie);
+                                    console.log(Movie.print_property());
+                                }
+
+
+                   });
+
                    }
-               });
-                movie_arr.push(Movie);
-                
+                });
             }
-        })
+        });
 
     }
 });
