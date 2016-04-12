@@ -3,7 +3,12 @@
  */
 
 var fs = require('fs');
-var movie_list = [];
+var mongoose = require('mongoose');
+var MovieSchema = require('./Movie');
+var mongodbURI = "mongodb://ek5442:NokiaLumia920@ds033875.mongolab.com:33875/movies";
+mongoose.connect(mongodbURI);
+var db = mongoose.connection;
+db.on('error',console.error.bind(console,'connection error'));
 var extensions = ['mp4','avi','mkv'];
 var base_dir = "E:/Downloads/";
 var Movie = {
@@ -58,6 +63,18 @@ fs.readdir("E:/Downloads",function(err,data){
                     Movie.set_movie_size(get_size(get_path(base_dir,d)));
                     Movie.set_movie_title(d);
                     Movie.set_movie_path(get_path(base_dir,d));
+                    var movie = new _Movie({
+                        title:Movie.get_movie_size(),
+                        path:Movie.get_movie_path(),
+                        drive_name:Movie.get_drive_name(),
+                        size:Movie.get_movie_size()
+                    });
+                    movie.save(function(error,movie){
+                        if (error)
+                            throw  error;
+                        else
+                            console.dir(movie);
+                    });
                     //movie_arr.push(Movie);
                     //console.log(Movie.print_property());
                 }
@@ -76,7 +93,18 @@ fs.readdir("E:/Downloads",function(err,data){
                                     Movie.set_movie_size(get_size(get_path(base_dir,d)+"/"+movie));
                                     Movie.set_movie_title(movie);
                                     Movie.set_movie_path(get_path(base_dir,d)+"/"+movie);
-                                    console.log(Movie.print_property());
+                                    var movie = new MovieSchema({
+                                        title:Movie.get_movie_size(),
+                                        path:Movie.get_movie_path(),
+                                        drive_name:Movie.get_drive_name(),
+                                        size:Movie.get_movie_size()
+                                    });
+                                    movie.save(function(error,movie){
+                                        if (error)
+                                            throw  error;
+                                        else
+                                            console.dir(movie);
+                                    });
                                 }
 
 

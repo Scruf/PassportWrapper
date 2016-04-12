@@ -2,13 +2,14 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher-compiled.js" />
         <item url="file://$PROJECT_DIR$/index-compiled.js" />
-        <item url="file://$PROJECT_DIR$/file.es6-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/file.es6-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher-compiled.js" />
+      <root url="file://$PROJECT_DIR$/index-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>

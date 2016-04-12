@@ -4,11 +4,9 @@ var Schema = mongoose.Schema;
 var movieSchema  = new Schema({
 	title:String,
 	path:String,
-	descripton:String,
-	image:String,
-	release_day:String,
-	size:Number
+	drive_name:String,
+	size:String
 });
 
-var Movie = mongoose.model('Movie',movieSchema);
-module.eports=Movie;
+var _Movie = mongoose.model('Movie',movieSchema);
+module.eports=_Movie;
