@@ -4,14 +4,14 @@
 
 var fs = require('fs');
 var mongoose = require('mongoose');
-var MovieSchema = require('./Movie');
+var Movie = require('./Movie');
 var mongodbURI = "mongodb://ek5442:NokiaLumia920@ds033875.mongolab.com:33875/movies";
 mongoose.connect(mongodbURI);
 var db = mongoose.connection;
 db.on('error',console.error.bind(console,'connection error'));
 var extensions = ['mp4','avi','mkv'];
 var base_dir = "E:/Downloads/";
-var Movie = {
+var _Movie = {
     movie_title: "",
     movie_size: 0,
     movie_path: "",
@@ -59,17 +59,17 @@ fs.readdir("E:/Downloads",function(err,data){
             for (var i=0;i<extensions.length;i++){
                 if(d.split(".")[1]===extensions[i]) {
                     //console.log(get_size(get_path(base_dir,d)));
-                    Movie.set_drive_name("Egor");
-                    Movie.set_movie_size(get_size(get_path(base_dir,d)));
-                    Movie.set_movie_title(d);
-                    Movie.set_movie_path(get_path(base_dir,d));
-                    var movie = new _Movie({
-                        title:Movie.get_movie_size(),
-                        path:Movie.get_movie_path(),
-                        drive_name:Movie.get_drive_name(),
-                        size:Movie.get_movie_size()
+                    _Movie.set_drive_name("Egor");
+                    _Movie.set_movie_size(get_size(get_path(base_dir,d)));
+                    _Movie.set_movie_title(d);
+                    _Movie.set_movie_path(get_path(base_dir,d));
+                    var _movie = new Movie({
+                        title:_Movie.get_movie_size(),
+                        path:_Movie.get_movie_path(),
+                        drive_name:_Movie.get_drive_name(),
+                        size:_Movie.get_movie_size()
                     });
-                    movie.save(function(error,movie){
+                    _movie.save(function(error,movie){
                         if (error)
                             throw  error;
                         else
@@ -89,17 +89,17 @@ fs.readdir("E:/Downloads",function(err,data){
                        data.filter(function(movie){
                            for(var e in extensions)
                                 if(movie.split(".")[1]==extensions[e]){
-                                    Movie.set_drive_name("Egor");
-                                    Movie.set_movie_size(get_size(get_path(base_dir,d)+"/"+movie));
-                                    Movie.set_movie_title(movie);
-                                    Movie.set_movie_path(get_path(base_dir,d)+"/"+movie);
-                                    var movie = new MovieSchema({
-                                        title:Movie.get_movie_size(),
-                                        path:Movie.get_movie_path(),
-                                        drive_name:Movie.get_drive_name(),
-                                        size:Movie.get_movie_size()
+                                    _Movie.set_drive_name("Egor");
+                                    _Movie.set_movie_size(get_size(get_path(base_dir,d)+"/"+movie));
+                                    _Movie.set_movie_title(movie);
+                                    _Movie.set_movie_path(get_path(base_dir,d)+"/"+movie);
+                                    var _movie = new Movie({
+                                        title:_Movie.get_movie_size(),
+                                        path:_Movie.get_movie_path(),
+                                        drive_name:_Movie.get_drive_name(),
+                                        size:_Movie.get_movie_size()
                                     });
-                                    movie.save(function(error,movie){
+                                    _movie.save(function(error,movie){
                                         if (error)
                                             throw  error;
                                         else

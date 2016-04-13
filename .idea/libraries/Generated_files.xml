@@ -3,12 +3,14 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Source-compiled.js" />
         <item url="file://$PROJECT_DIR$/index-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/file.es6-compiled.js" />
       <root url="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Source-compiled.js" />
       <root url="file://$PROJECT_DIR$/index-compiled.js" />
     </CLASSES>
     <SOURCES />

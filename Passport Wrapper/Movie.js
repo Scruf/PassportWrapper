@@ -8,5 +8,5 @@ var movieSchema  = new Schema({
 	size:String
 });
 
-var _Movie = mongoose.model('Movie',movieSchema);
-module.eports=_Movie;
+var Movie = mongoose.model('Movie',movieSchema);
+module.exports=Movie;
