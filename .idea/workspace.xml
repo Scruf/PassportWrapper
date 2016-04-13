@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7241ccf1-b95c-4efa-ba18-8d2406b70e05" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Movie.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Passport_Warapper_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Passport_Warapper_node_modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Passport Wrapper/Movie.js" afterPath="$PROJECT_DIR$/Passport Wrapper/Movie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Passport Wrapper/folder_scratcher.js" afterPath="$PROJECT_DIR$/Passport Wrapper/folder_scratcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="Passport Warapper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +51,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Movie.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -69,12 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="folder_scratcher.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="folder_scratcher.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-              <folding />
+              <folding>
+                <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+                <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,6 +138,7 @@
         <option value="$PROJECT_DIR$/Source.js" />
         <option value="$PROJECT_DIR$/Passport Wrapper/Movie.js" />
         <option value="$PROJECT_DIR$/Passport Wrapper/folder_scratcher.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -137,10 +153,9 @@
     <scope name="Source" pattern="file[Passport Warapper]:*||file[Passport Warapper]:*/" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -205,20 +220,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passport Warapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passport Warapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passport Wrapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -235,10 +236,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
   </component>
-  <component name="RunManager" selected="Node.js.folder_scratcher.js">
-    <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ekozi\Documents\Passport Warapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.server.js">
     <configuration default="false" name="folder_scratcher.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="folder_scratcher.js" working-dir="$PROJECT_DIR$/Passport Wrapper">
       <method />
     </configuration>
@@ -249,6 +252,9 @@
       <method />
     </configuration>
     <configuration default="false" name="Movie.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Movie.js" working-dir="$PROJECT_DIR$/Passport Wrapper">
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -305,19 +311,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.folder_scratcher.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.helper.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.Movie.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.folder_scratcher.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.helper.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.Movie.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.server.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.folder_scratcher.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.Movie.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.helper.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.index.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.folder_scratcher.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.Movie.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.helper.js" />
       </list>
     </recent_temporary>
   </component>
@@ -336,23 +342,23 @@
       <updated>1459730152586</updated>
       <workItem from="1460500418012" duration="1158000" />
       <workItem from="1460508503273" duration="2654000" />
-      <workItem from="1460580891811" duration="361000" />
+      <workItem from="1460580891811" duration="1831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4173000" />
+    <option name="totallyTimeSpent" value="5643000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-8" y="0" width="976" height="1076" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24425887" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32676348" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3343949" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -401,14 +407,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Passport Wrapper/folder_scratcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -474,7 +472,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,7 +536,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -603,7 +607,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,7 +678,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,15 +756,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,6 +834,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding>
+            <marker date="1460581183421" expanded="true" signature="1457:4169" placeholder="{...}" />
+            <marker date="1460581183421" expanded="true" signature="1491:4167" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
       </provider>
