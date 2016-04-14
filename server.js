@@ -22,7 +22,7 @@ app.use(method_override('X-HTTP-Method-Override')); // override with the X-HTTP-
 
 app.listen(8000);
 console.log("Application listening to port 8000");
-app.get('/api/todos',function(req,res){
+app.get('/api/Movies',function(req,res){
     Movie.find(function(err,data){
         if (err)
             res.send(err);

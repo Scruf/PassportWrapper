@@ -6,6 +6,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "bson": "^0.4.20",
+    "cheerio": "^0.20.0",
     "core-util-is": "^1.0.2",
     "es6-promise": "^2.1.1",
     "express": "^4.13.4",
@@ -18,6 +19,7 @@
     "morgan": "^1.7.0",
     "moviedb": "^0.2.2",
     "readable-stream": "^1.0.31",
+    "request": "^2.71.0",
     "string_decoder": "^0.10.31"
   },
   "devDependencies": {
