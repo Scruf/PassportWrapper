@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="wrapper">
+<head>
+    <title>Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="js/core.js"></script>
+
+</head>
+<body ng-controller="main_controller">
+
+
+    <div id="container">
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="navbar-boxes">Movies</li>
+                <li class="navbar-boxes">Books</li>
+                <li class="navbar-boxes">Projects</li>
+            </ul>
+        </div>
+        <div clss="row" ng-repeat="movie in movie_list">
+            <div class="col-sm-4 movie_comp">{{movie.path}}</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
