@@ -33,6 +33,12 @@ app.get('/api/Movies',function(req,res){
         }
     });
 });
-app.get('*',function(req,res){
+app.get('/',function(req,res){
    res.sendfile('./public/views/index.html');
+});
+app.get('/books',function(req,res){
+    res.sendfile('./public/views/books.html')
+});
+app.get('/projects',function(req,res){
+    res.sendfile('./public/views/projects.html')
 });
