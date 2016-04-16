@@ -10,3 +10,10 @@ var db = mongoose.connection;
 db.on('error',console.error.bind(console,'connection error'));
 
 var DEFAULT_URL = "http://www.imdb.com/find?ref_=nv_sr_fn&q=";
+Movie.find(function(err,data){
+    if(err)
+        throw err;
+    else{
+        console.log(data);
+    }
+})

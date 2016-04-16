@@ -64,7 +64,7 @@ fs.readdir("E:/Downloads",function(err,data){
                     _Movie.set_movie_title(d);
                     _Movie.set_movie_path(get_path(base_dir,d));
                     var _movie = new Movie({
-                        title:_Movie.get_movie_size(),
+                        title:_Movie.get_movie_title(),
                         path:_Movie.get_movie_path(),
                         drive_name:_Movie.get_drive_name(),
                         size:_Movie.get_movie_size()
@@ -94,7 +94,7 @@ fs.readdir("E:/Downloads",function(err,data){
                                     _Movie.set_movie_title(movie);
                                     _Movie.set_movie_path(get_path(base_dir,d)+"/"+movie);
                                     var _movie = new Movie({
-                                        title:_Movie.get_movie_size(),
+                                        title:_Movie.get_movie_title(),
                                         path:_Movie.get_movie_path(),
                                         drive_name:_Movie.get_drive_name(),
                                         size:_Movie.get_movie_size()
