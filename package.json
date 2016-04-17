@@ -20,7 +20,8 @@
     "moviedb": "^0.2.2",
     "readable-stream": "^1.0.31",
     "request": "^2.71.0",
-    "string_decoder": "^0.10.31"
+    "string_decoder": "^0.10.31",
+    "webtorrent": "^0.90.3"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5"

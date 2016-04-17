@@ -10,7 +10,7 @@ mongoose.connect(mongodbURI);
 var db = mongoose.connection;
 db.on('error',console.error.bind(console,'connection error'));
 var extensions = ['mp4','avi','mkv'];
-var base_dir = "E:/Downloads/";
+var base_dir = "F:/Movies/";
 var _Movie = {
     movie_title: "",
     movie_size: 0,
@@ -52,7 +52,7 @@ var _Movie = {
     }
 };
 var movie_arr = [];
-fs.readdir("E:/Downloads",function(err,data){
+fs.readdir("F:/Movies",function(err,data){
     if (err) throw err;
     else{
         data.filter(function (d){
