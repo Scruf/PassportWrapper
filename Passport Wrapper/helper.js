@@ -16,10 +16,10 @@ Movie.find(function(err,data){
     else{
         data.filter(function(temp){
             title = temp.title.split(".")[0];
-        console.log("title is "+title)
-          app.get('/scrape',function (req,res) {
+        // console.log("title is "+title)
+        //   app.get('/scrape',function (req,res) {
              request(build_url(title,DEFAULT_URL),function(err,response,html){
-                 console.log(build_url(title,DEFAULT_URL));
+
                 if(err)
                     throw err;
                  else{
@@ -27,16 +27,15 @@ Movie.find(function(err,data){
                     var $ = cheerio.load(html);
                    $(".findList").each(function(){
                       var data =$(this);
+                       console.log("Printinf ");
                        console.log(data.children(":first-child").children().next().text());
 
-                       setTimeout(function(){
-                            console.log("Page finished");
-                       },2000)
+
                    });
                 }
              });
-          });
-            console.log("I am done");
+          // });
+
         });
     }
 });
