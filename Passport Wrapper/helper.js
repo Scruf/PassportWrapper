@@ -16,10 +16,8 @@ Movie.find(function(err,data){
     else{
         data.filter(function(temp){
             title = temp.title.split(".")[0];
-        // console.log("title is "+title)
-        //   app.get('/scrape',function (req,res) {
+            // console.log(temp.title);
              request(build_url(title,DEFAULT_URL),function(err,response,html){
-
                 if(err)
                     throw err;
                  else{
@@ -27,14 +25,31 @@ Movie.find(function(err,data){
                     var $ = cheerio.load(html);
                    $(".findList").each(function(){
                       var data =$(this);
-                       console.log("Printinf ");
-                       console.log(data.children(":first-child").children().next().text());
 
+
+
+                       Movie.findOne({'title': temp.title},function(err,movie_dat){
+
+                           "use strict";
+                           if(err)
+                               throw err;
+                           else{
+                               console.log()
+                               movie_dat.title = data.children(":first-child").children().next().text();
+                               movie_dat.save(function (err,movie) {
+                                   if(err)
+                                       throw err;
+                                   console.dir(movie);
+
+                               });
+                           }
+
+                      });
 
                    });
                 }
              });
-          // });
+
 
         });
     }
