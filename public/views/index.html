@@ -25,8 +25,11 @@
             </ul>
         </div>
 
-        <div clss="row" ng-repeat="movie in movie_list">
-            <div class="col-sm-4 movie_comp">{{movie.title}}</div>
+        <div clss="row" ng-repeat="movie in movies">
+            <div class="col-sm-4 movie_comp">
+                <video>{{movie.title}}
+                    <source src="{{movie.path}}" >
+                </video></div>
         </div>
     </div>
 

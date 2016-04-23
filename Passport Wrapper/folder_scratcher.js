@@ -10,12 +10,13 @@ mongoose.connect(mongodbURI);
 var db = mongoose.connection;
 db.on('error',console.error.bind(console,'connection error'));
 var extensions = ['mp4','avi','mkv'];
-var base_dir = "F:/Movies/";
+var base_dir = "E:/Downloads/";
 var _Movie = {
     movie_title: "",
     movie_size: 0,
     movie_path: "",
     drive_name: "",
+    extesnsion: "",
     set_movie_title: function (val) {
         this.movie_title = val;
     },
@@ -28,12 +29,17 @@ var _Movie = {
     set_drive_name: function (val) {
         this.drive_name = val;
     },
+    set_file_extension: function(val){
+        "use strict";
+        this.extesnsion=val;
+    },
     print_property: function(){
         var prop =  {
             'movie_title':this.get_movie_title(),
             'drive_name':this.get_drive_name(),
             'movie_path':this.get_movie_path(),
             'movie_size':this.get_movie_size(),
+            'extension':this.get_movie_extension(),
 
         };
         return prop;
@@ -49,10 +55,14 @@ var _Movie = {
     },
     get_drive_name: function(){
         return this.drive_name;
+    },
+    get_movie_extension: function(){
+        "use strict";
+        return this.extesnsion;
     }
 };
 var movie_arr = [];
-fs.readdir("F:/Movies",function(err,data){
+fs.readdir("E:/Downloads",function(err,data){
     if (err) throw err;
     else{
         data.filter(function (d){
@@ -63,12 +73,15 @@ fs.readdir("F:/Movies",function(err,data){
                     _Movie.set_movie_size(get_size(get_path(base_dir,d)));
                     _Movie.set_movie_title(d);
                     _Movie.set_movie_path(get_path(base_dir,d));
+                    _Movie.set_file_extension(d.split(".")[1]);
                     var _movie = new Movie({
                         title:_Movie.get_movie_title(),
                         path:_Movie.get_movie_path(),
                         drive_name:_Movie.get_drive_name(),
-                        size:_Movie.get_movie_size()
+                        size:_Movie.get_movie_size(),
+                        extension:_Movie.get_movie_extension()
                     });
+                    console.log(Movie);
                     _movie.save(function(error,movie){
                         if (error)
                             throw  error;
@@ -97,7 +110,8 @@ fs.readdir("F:/Movies",function(err,data){
                                         title:_Movie.get_movie_title(),
                                         path:_Movie.get_movie_path(),
                                         drive_name:_Movie.get_drive_name(),
-                                        size:_Movie.get_movie_size()
+                                        size:_Movie.get_movie_size(),
+                                        extension:_Movie.get_movie_extension()
                                     });
                                     _movie.save(function(error,movie){
                                         if (error)

@@ -5,7 +5,8 @@ var movieSchema  = new Schema({
 	title:String,
 	path:String,
 	drive_name:String,
-	size:String
+	size:String,
+	extension:String
 });
 
 var Movie = mongoose.model('Movie',movieSchema);
